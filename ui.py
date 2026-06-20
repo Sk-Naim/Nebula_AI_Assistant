@@ -944,7 +944,7 @@ class MainWindow(QMainWindow):
 
     def __init__(self, face_path: str):
         super().__init__()
-        self.setWindowTitle("NEBULA AI — MARK XXXIX")
+        self.setWindowTitle("NEBULA AI")
         self.setMinimumSize(_MIN_W, _MIN_H)
         self.resize(_DEFAULT_W, _DEFAULT_H)
 
@@ -1303,7 +1303,7 @@ class MainWindow(QMainWindow):
 
         lay.addWidget(_fl("[F4] Mute  ·  [F11] Fullscreen"))
         lay.addStretch()
-        lay.addWidget(_fl("Sk Raj Lab  ·  MARK XXXIX  ·  CLASSIFIED"))
+        lay.addWidget(_fl("Sk Naim  ·  NEBULA AI  ·  CLASSIFIED"))
         lay.addStretch()
         lay.addWidget(_fl("@ Naimuddin", C.PRI_DIM))
         return w

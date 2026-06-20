@@ -1,81 +1,70 @@
-# 🤖 MARK XXXIX (39)
-### The Ultimate Cross-Platform Personal AI Assistant — By FatihMakes
+# Nebula AI - Kaggle Capstone Project 🚀
 
-> 📺 **[Watch the full setup video on YouTube](https://youtu.be/ej1f5OE3SNQ?si=lCxDhJix9ungq1Ry)**
+> **A real-time, cross-platform voice AI assistant that sees, hears, understands, and controls your computer.**
 
-A real-time voice AI that can hear, see, understand, and control your computer — on any OS. Supporting Windows, macOS, and Linux. Local execution. Zero subscriptions. Engineered for total autonomy.
-
----
-
-## ✨ Overview
-
-MARK XXXIX represents the pinnacle of the Nebula AI series, evolving into a more flexible and robust system. It bridges the gap between the operating system and human intent. Through natural dialogue, Mark 39 analyzes your screen, processes uploaded documents, and executes complex workflows with a brand-new, adaptive interface.
-
-It's not just an assistant — it's an extension of your digital life.
+Welcome to the **Nebula AI** repository, submitted as part of the **Kaggle 5-Day AI Agents Intensive** capstone project. This project fits into the **Concierge Agents** and **Freestyle Track**, acting as an autonomous personal assistant that bridges the gap between natural human intent and complex operating system tasks.
 
 ---
 
-## 🚀 Capabilities
+## 🌟 Overview & Working Principle
 
-### Core Features
-| Feature | Description |
-|---|---|
-| 🎙️ Real-time Voice | Ultra-low latency conversation in any language |
-| 🖥️ System Control | Launch apps, manage files, execute terminal commands |
-| 🧩 Autonomous Tasks | High-level planning for complex, multi-step goals |
-| 👁️ Visual Awareness | Real-time screen processing and webcam vision |
-| 🧠 Persistent Memory | Deeply remembers your projects, preferences, and personal context |
-| ⌨️ Hybrid Input | Seamlessly switch between keyboard typing and voice commands |
+Nebula AI operates on a **continuous observation-action loop**. It acts as a bridge between the physical world (via camera and microphone), the digital operating system, and a Large Language Model (Google Gemini API).
+
+**The Working Principle:**
+1. **Perception**: The agent actively listens to your voice commands and can "see" your screen and physical environment through the camera in real-time.
+2. **Cognition**: Using the Gemini API, it processes multimodal inputs (audio transcripts, screenshots, dragged-and-dropped files). The reasoning engine parses intent and formulates a plan.
+3. **Execution**: The agent converts its plan into discrete tool calls (Action Handlers). It can simulate keyboard typing, execute terminal commands, browse the web via Playwright, or manipulate local files.
+4. **Memory**: Short-term conversation history and long-term user preferences are retained, allowing the agent to continuously learn and adapt to your workflow over time.
 
 ---
 
-## 🆕 What's New in XXXIX
+## ✨ Comprehensive Features
 
-- 📂 **Advanced File Handling** — New support for direct file uploads. Drop PDFs, source code, or images into the assistant to have them analyzed, summarized, or edited instantly.
-- 🎨 **Adaptive & Flexible UI** — A complete overhaul of the interface. The new UI is fully resizable and responsive, featuring transparency controls and customizable layouts to fit your workspace perfectly.
-- 🐧🍎 **Refined Cross-Platform Stability** — Major fixes for macOS and Linux compatibility. Core system actions are now more consistent across all three major operating systems.
-- ⚡ **Optimized Core Engine** — Significant performance boost in tool-calling logic and response generation, resulting in a 40% faster interaction speed.
+- **🎙️ Real-Time Voice Interaction**: Speak naturally in any language with ultra-low latency voice-to-text and text-to-speech pipelines.
+- **👁️ Visual Awareness**: Real-time screen processing allows the agent to "see" your workspace, acting on visual context, UI elements, and even webcam feeds.
+- **🤖 Autonomous Task Execution**: High-level planning for multi-step goals. The agent can browse the web using Playwright, manipulate files, and execute terminal commands without human intervention.
+- **🧠 Persistent Memory**: Retains deep context of your ongoing projects, coding preferences, and personal workflows across sessions.
+- **🎨 Adaptive UI HUD**: A responsive, semi-transparent heads-up display (HUD) that blends seamlessly with your desktop environment, mimicking native OS integrations.
+- **⌨️ Hybrid Input**: Switch smoothly between typing text commands in the terminal and speaking out loud.
+- **📂 Document & File Handling**: Drag and drop PDFs, source code, or images directly into the assistant interface for instant summarization, analysis, or editing.
+- **🌐 Cross-Platform Capability**: Architected to run cleanly on macOS, Windows, and Linux.
 
 ---
 
-## ⚡ Quick Start
+## 🏗️ Architecture Breakdown
+
+Nebula AI is engineered for total autonomy with a modular, highly decoupled architecture:
+
+1. **Core Engine (`/core`)**: Manages the main event loop, connecting inputs to the Gemini API. It handles token limits, prompting, and routes logic to action handlers.
+2. **Action Handlers (`/actions`)**: A suite of tools the agent can invoke to interact with the system. This includes OS-level bash commands, Python scripting, and opening local applications.
+3. **Agent Logic (`/agent`)**: The decision-making layer that breaks down complex user prompts into executable tool calls and multi-step plans.
+4. **Memory Module (`/memory`)**: Handles storing context in localized JSON databases to persist memory securely on your own device.
+5. **Web Automation**: Uses Playwright to autonomously navigate the web, scrape information, read documentation, and interact with complex web applications on behalf of the user.
+6. **UI Layer (`ui.py`)**: Built with PyQt6, providing a highly customizable and resizable cross-platform overlay interface.
+
+---
+
+## 🛠️ Installation & Quick Start
 
 ```bash
-git clone https://github.com/FatihMakes/Mark-XXXIX.git
-cd Mark-XXXIX
+# Clone the repository
+git clone https://github.com/Sk-Naim/Nebula_AI_Assistant.git
+cd Kaggle-Capstone-Project
+
+# Install dependencies
 pip install -r requirements.txt
 playwright install
+
+# Run the agent
 python main.py
 ```
 
-> ⚠️ **Installation Note:** To keep the repository lightweight, some OS-specific dependencies are not bundled in `requirements.txt`. If you run into a `ModuleNotFoundError`, simply install the missing package via `pip install <module_name>` for your specific system.
+*Note: Requires a free Gemini API Key. Set your key securely in `config/api_keys.json` before running.*
 
 ---
 
-## 📋 Requirements
-
-| Requirement | Details |
-|---|---|
-| **OS** | Windows 10/11, macOS, or Linux |
-| **Python** | 3.11 or 3.12 |
-| **Microphone** | Required for voice interaction |
-| **API Key** | Free Gemini API key |
+## 🎯 Capstone Project Context
+Developed for the **Kaggle 5-Day AI Agents Intensive**. Nebula AI demonstrates the real-world usefulness of autonomous agents by serving as an advanced personal assistant that goes beyond simple chatbots, actively manipulating the desktop environment to complete real work safely and efficiently.
 
 ---
-
-## ⚠️ License
-
-Personal and non-commercial use only.
-Licensed under **[Creative Commons BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/)**.
-
----
-
-## 👤 Connect with the Creator
-
-Engineered by a developer building a real-world NEBULA AI-style assistant.
-⭐ **Star the repository to support the journey to Mark 100.**
-
-| Platform | Link |
-|---|---|
-| YouTube | [@FatihMakes](https://www.youtube.com/@FatihMakes) |
-| Instagram | [@fatihmakes](https://www.instagram.com/fatihmakes) |
+*Developed and Engineered by **Sk Naim**.*
