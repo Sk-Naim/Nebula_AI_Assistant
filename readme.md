@@ -4,6 +4,10 @@
 
 Welcome to the **Nebula AI** repository, submitted as part of the **Kaggle 5-Day AI Agents Intensive** capstone project. This project is a highly capable **Concierge Agent**, acting as an autonomous personal assistant that bridges the gap between natural human intent and complex real-world task execution.
 
+### User Interface Preview
+![Nebula AI Interface - Radar Mode](assets/ui_1.png)
+![Nebula AI Interface - Vision Mode](assets/ui_2.png)
+
 ---
 
 ## 🌟 Overview & Capabilities
