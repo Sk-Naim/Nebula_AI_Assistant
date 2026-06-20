@@ -1,0 +1,101 @@
+{
+  "identity": {
+    "name": {
+      "value": "SK Naimuddin",
+      "updated": "2026-05-05"
+    },
+    "preferred_name": {
+      "value": "Raj",
+      "updated": "2026-05-05"
+    },
+    "language": {
+      "value": "Hindi",
+      "updated": "2026-05-17"
+    },
+    "gave_name_nebula_ai": {
+      "value": "User gave me the name Nebula AI",
+      "updated": "2026-05-13"
+    }
+  },
+  "preferences": {
+    "language_style": {
+      "value": "informal",
+      "updated": "2026-05-13"
+    },
+    "favorite_food": {
+      "value": "Golden Corn Pizza",
+      "updated": "2026-06-05"
+    }
+  },
+  "projects": {
+    "college_assignments": {
+      "value": "User is tired due to many college assignments",
+      "updated": "2026-06-05"
+    }
+  },
+  "relationships": {
+    "sister_name": {
+      "value": "Reshma Khatun",
+      "updated": "2026-05-05"
+    },
+    "grandfather": {
+      "value": "User's grandfather",
+      "updated": "2026-05-04"
+    },
+    "grandfather_name": {
+      "value": "Sk Nurul Islam",
+      "updated": "2026-05-05"
+    },
+    "grandmother_name": {
+      "value": "Jorina Bibi",
+      "updated": "2026-05-04"
+    },
+    "mother_name": {
+      "value": "NoorJahan Sheikh",
+      "updated": "2026-05-05"
+    },
+    "father_name": {
+      "value": "Sekh Moynuddin",
+      "updated": "2026-05-05"
+    },
+    "friend": {
+      "value": "SK Aashik",
+      "updated": "2026-05-18"
+    },
+    "brother_in_law": {
+      "value": "SK Aashik",
+      "updated": "2026-05-18"
+    }
+  },
+  "notes": {
+    "mood": {
+      "value": "very good",
+      "updated": "2026-05-04"
+    },
+    "read_surahs": {
+      "value": "read 3 surahs",
+      "updated": "2026-05-06"
+    },
+    "user_mood": {
+      "value": "frustrated",
+      "updated": "2026-06-05"
+    },
+    "gave_name_nebula_ai": {
+      "value": "User gave me the name Nebula AI",
+      "updated": "2026-05-13"
+    },
+    "sleep_pattern": {
+      "value": "User cannot sleep at night and has fun in the morning",
+      "updated": "2026-05-13"
+    },
+    "start_command_response": {
+      "value": "Hey Raj, what are you doing right now, you look very tired, how can I help you",
+      "updated": "2026-06-05"
+    },
+    "college_assignments": {
+      "value": "User is tired due to many college assignments",
+      "updated": "2026-06-05"
+    }
+  },
+  "wishes": {}
+}
